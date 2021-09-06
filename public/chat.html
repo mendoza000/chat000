@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CHAT</title>
+	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/chat.css">
+
+	<!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+</head>
+<body>
+	<div class="user_list">
+		<span class="user_list_title">Usuarios conectados</span>
+		<ul id="ulUsuarios">
+					
+		</ul>
+	</div>
+	<div class="container">
+
+		<div class="chat">
+			<h3>Chat completo</h3>
+			<ul id="historial">
+					
+			</ul>
+		</div>
+		
+		<div class="inputs">
+			<div class="container_input_mensaje">
+				<input 
+				type="text"
+				id="txtMensaje"
+				class="form-control mb-2"
+				placeholder="Mensaje"
+				autocomplete="off">
+			</div>
+			<!-- <input 
+				type="text"
+				id="txtMensajeUid"
+				class="form-control mb-2"
+				placeholder="Uid"
+				autocomplete="off">
+		</div> -->
+
+		<!-- <button class="btn btn-outline-danger">
+			Cerrar sesión
+		</button> -->
+	</div>
+
+	<script src="./socket.io/socket.io.js"></script>
+	<script src="./js/socket-client.js"></script>
+</body>
+</html>

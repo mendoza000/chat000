@@ -1,0 +1,109 @@
+:root{
+	--color-primary-xo: #1c2838;
+	--color-primary-o: #253245;
+	--color-primary: #334257;
+	--color-primary-l: #47576e;
+	--color-primary-xl: #5a6b82;
+
+	--color-secondary-xo: #346882;
+	--color-secondary-o: #437994;
+	--color-secondary: #548CA8;
+	--color-secondary-l: #689fba;
+	--color-secondary-xl: #82b7d1;
+
+	--color-text: #edf9ff;
+
+	--font-title: 'Teko', sans-serif;
+	--font-text: 'Ubuntu', sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, html{
+	background-color: var(--color-primary);
+	font-family: var(--font-text);
+	color: var(--color-text);
+	overflow: unset;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+}
+.container_title{
+	text-align: center;
+	border-bottom: 2px solid var(--color-secondary-l);
+	padding: 0.2em 0.5em;
+}
+.container_form{
+	display: flex;
+	flex-direction: column;
+}
+.form_input{
+	padding: 0.5em;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	margin-bottom: 1em;
+}
+.form_btn{
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	background-color: var(--color-secondary);
+	color: var(--color-text);
+	transition: background-color 0.5s;
+}
+.form_btn:hover{
+	background-color: var(--color-secondary-o);
+}
+.icon{
+	width: 15em;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: -2em;
+	margin-top: -3em;
+	/*-webkit-box-shadow: 0px 0px 47px -18px var(--color-secondary-xl); 
+	box-shadow: 0px 0px 47px -18px var(--color-secondary-xl);*/
+}
+
+.container_contact{
+	display: flex;
+	margin-top: 1em;
+}
+.contact{
+	font-size: 1.5em;
+	padding: 0.2em 0.3em;
+	border: 2px solid var(--color-secondary-xl);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-secondary-xl);
+	text-decoration: none;
+	border-radius: 10px;
+	margin: 0 0.2em;
+	transition: background-color 0.5s, color 0.5s;
+}
+.contact:hover{
+	background-color: var(--color-secondary);
+	color: var(--color-text);
+}
+
+footer{
+	height: 3em;
+	background-color: var(--color-primary-o);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+}
