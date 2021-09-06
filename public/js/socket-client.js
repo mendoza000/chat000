@@ -9,7 +9,7 @@ const getAuthUser = async (token) => {
 
 	const url = (window.location.hostname === 'localhost')
 		? 'http://localhost:8080/api/auth'
-		: 'https://restmongo000.herokuapp.com/api/auth'
+		: 'https://chats000.herokuapp.com/api/auth'
 
 	const resp = await fetch( url, {
         method: 'GET',
