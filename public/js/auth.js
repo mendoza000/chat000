@@ -3,7 +3,7 @@ const formData = {}
 
 const url = ( window.location.hostname.includes('localhost') )
         ? 'http://localhost:8080/api/auth/'
-        : 'https://restserver-curso-fher.herokuapp.com/api/auth/';
+        : 'https://chats000.herokuapp.com/api/auth/';
 
 miForm.addEventListener('submit', async event => {
     
